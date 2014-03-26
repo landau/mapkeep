@@ -1,0 +1,33 @@
+{
+  "name": "mapkeep",
+  "version": "1.0.0",
+  "description": "Returns an array of the non-null results of fn(item, index). This means false return values will be included.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js test.js",
+    "test": "mocha -R nyan test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/landau/mapkeep.git"
+  },
+  "keywords": [
+    "functional",
+    "map",
+    "iterate",
+    "array",
+    "keep",
+    "transform"
+  ],
+  "author": "Trevor Landau <landautrevor@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landau/mapkeep/issues"
+  },
+  "homepage": "https://github.com/landau/mapkeep",
+  "devDependencies": {
+    "jshint-stylish": "^0.1.5",
+    "mocha": "^1.18.2",
+    "jshint": "^2.4.4"
+  }
+}
