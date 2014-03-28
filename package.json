@@ -1,6 +1,6 @@
 {
   "name": "mapkeep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns an array of the non-null results of fn(item, index). This means false return values will be included.",
   "main": "index.js",
   "scripts": {

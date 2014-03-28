@@ -3,8 +3,21 @@
 mapkeep
 ======
 
+```js
 Returns an array of the non-null results of fn(item, index). This means false return values will be included.
 
+/**
+ * Returns an array of the non-null/undefined results of fn(item, index).
+ * This means false return values will be included.
+ *
+ * @param {Array} coll
+ * @param {Function} fn
+ * @param {Object} [ctx]
+ *
+ * @return {Array}
+ */
+function mapkeep(coll, fn, ctx) { }
+```
 
 ## Install
 
@@ -14,7 +27,7 @@ Returns an array of the non-null results of fn(item, index). This means false re
 
 ```js
 var assert = require('assert');
-var mapkeep = require('./');
+var mapkeep = require('mapkeep');
 
 function property(key) {
   return function(o) {
